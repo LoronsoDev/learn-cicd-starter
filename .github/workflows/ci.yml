@@ -30,6 +30,6 @@ jobs:
       - name: Install staticcheck
         run: go install honnef.co/go/tools/cmd/staticcheck@latest
       - name: Add Go bin to PATH
-        run: echo "${{ github.workspace }}/go/bin" >> $GITHUB_PATH
+        run: echo "$HOME/go/bin" >> $GITHUB_PATH
       - name: runs static check
         run: staticcheck ./...
