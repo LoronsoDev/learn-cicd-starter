@@ -22,9 +22,9 @@ jobs:
         run: ./scripts/buildprod.sh
 
   GCP_cd:
-    steps:
       name: GCP continuous delivery
       runs-on: ubuntu-latest
+    steps:
     - id: 'auth'
       uses: 'google-github-actions/auth@v2'
       with:
