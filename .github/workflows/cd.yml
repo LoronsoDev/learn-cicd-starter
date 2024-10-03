@@ -42,3 +42,4 @@ jobs:
 
       - name: 'Build & push to GCP'
         run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-437514/notely-ar-repo/notely:latest .
+        
